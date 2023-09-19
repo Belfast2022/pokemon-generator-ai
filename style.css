@@ -1,0 +1,239 @@
+html,div,dl,dt,dd,ul,ol,li,pre,form,label,fieldset,p,input{margin:0;padding:0}
+article,details,hgroup,{display:block;margin:0;padding:0}
+html{background:#e6f2ff;color:#333;font:.875em/1.5 "Helvetica Neue",Arial,sans-serif;text-align:center}
+body{max-width:40em;margin:0 auto;padding:.5em}
+
+h1{font-weight:bold;font-size:2em;margin-bottom:20px;color:#4682B4;}
+h2{font-weight:normal;color:#4682B4;font-size:1.25em;font-style:normal;}
+
+p {margin-bottom: 1em;}
+article {margin-bottom : 1em;}
+
+a{text-decoration:none;border-bottom:none; color:#000;}
+a:hover {color:#666;}
+
+fieldset{border:none; cursor:pointer; line-height:normal; margin-top : 10px;}
+label {white-space:normal; display:inline-block; margin-right : .5rem;}
+input[type="checkbox"] {vertical-align:text-top;margin-right:.25rem;}
+button,input[type="button"],input[type="submit"] {cursor:pointer;background-color : #4682B4 ; color:white;border-radius : 8px;}
+
+#controls input[type="submit"] {
+    font-size:16px;
+    padding:.5rem;
+    border:none;
+    width:auto;
+}
+
+abbr {
+    cursor:pointer;
+    border-bottom:dotted thin;
+}
+
+.clear {
+    clear:both
+}
+
+.hidden {
+visibility:hidden
+}
+
+.invisible{
+display:none
+}
+
+
+header{
+margin-top : 20px ;
+text-align:center ;
+padding-top : .5rem ;
+padding-bottom : .5rem ;
+background-color:#f9fbfd ;
+border-radius : 8px ; 
+box-shadow:-8px -7px 17px #fff,
+            -8 -7   17   #fff,
+            -8   -7     17     #fff,
+             8      -7      17       #fff,
+             -3       -3       -3        rgba(163 ,177 ,198 , .6),
+              inset           top           right          rgba(163 ,177 ,198 , .6);
+}
+
+
+.menu,.menu:before{
+border-radius:12px
+}
+.menu{
+padding:.5rem;
+position:relative;z-index:auto;margin:auto;border:solid thin #e6f2ff;background-color:white;width:auto;display:flex;justify-content:center;
+
+}
+.menu:before{
+
+content:"";
+display:block;
+
+top:-10%;
+left:-10%;
+right:-10%;
+bottom:-10%;
+
+}
+
+
+
+#history{
+margin-top :30 px;display:flex;justify-content:center ;
+
+}
+
+
+button.text{
+
+background-color:white ;
+
+color:black ;
+
+border:solid thin black ;
+
+
+width:auto ;
+
+height:auto ;
+
+text-align:center ;
+
+
+padding:.125 rem ;
+
+
+font-size:x-large ;
+
+
+border-radius:.25 rem ;
+
+
+transition-duration:.4 s;
+
+
+}
+
+
+#results li {
+
+display:inline-block;
+
+height:auto;
+
+padding-top:128px;
+
+width:auto ;
+
+margin-bottom:1em;
+
+position:relative;
+
+list-style:none;
+
+
+}
+
+#results img{
+
+position:relative ;
+
+bottom:3rem ;
+
+left:0% ;
+
+transform:none ;
+
+
+}
+
+
+footer{
+font-size:.875em;
+padding-top : 30px ;
+color:#666;
+clear:both;
+text-align:center ;
+background-color:#f9fbfd ;
+border-radius : 8px ; 
+box-shadow:-8px -7px 17px #fff,
+            -8 -7   17   #fff,
+            -8   -7     17     #fff,
+             8      -7      17       #fff,
+             -3       -3       -3        rgba(163 ,177 ,198 , .6),
+              inset           top           right          rgba(163 ,177 ,198 , .6);
+}
+
+@media screen and (max-width:420px){
+    body {
+        padding-left : .5rem ;
+        padding-right : .5rem ;
+    }
+}
+@media screen and (prefers-color-scheme: dark) {
+    html{background:#222;color:#FFF}
+    h2,footer{color:#CCC}
+    .menu,.menu:before{border-color:#FFF}
+
+    a,button.text{color:#DDD;border-bottom-color:#777}
+    a:hover,button.text:hover{color:white;}
+}
+
+@keyframes fadeIn { from {opacity:0} to {opacity:1;color:black;} }
+@keyframes rotate { from {transform:rotate(0deg)} to {transform:rotate(360deg)} }
+@keyframes shine {
+    from{color:white;text-shadow:none;}
+    to  {color:white;text-shadow:none;}
+}
+
+/* Style for the shiny Pokemon toggle button */
+#shiny-toggler {
+    background-color: #4682B4; /* Blue background */
+    color: #fff; /* White text */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+/* Change color when hover over the shiny Pokemon toggle button */
+#shiny-toggler:hover {
+    background-color: #366994; /* Darker blue background */
+}
+
+/* Style for the shiny Pokemon container when visible */
+#shiny-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   /* Styles to make it look nice - adjust as needed */
+   background-color:#f9fbfd ;
+   border-radius : 8px ; 
+   box-shadow:-8px -7px 17px #fff,
+            -8 -7   17   #fff,
+            -8   -7     17     #fff,
+             8      -7      17       #fff,
+             -3       -3       -3        rgba(163 ,177 ,198 , .6),
+              inset           top           right          rgba(163 ,177 ,198 , .6);
+   
+}
+
+/* Clear shinies button styles*/
+#shiny-container button {
+    background-color:#4682B4 ; 
+    color:white; 
+    border:none; 
+    padding:.5rem; 
+    font-size:.875em;  
+    border-radius : 8px ;
+    margin-top : .5rem ;
+    cursor:pointer ;
+}
+
+/* Clear shinies button hover effect*/
+#shiny-container button:hover{
+    background-color:#366994 ; 
+}
