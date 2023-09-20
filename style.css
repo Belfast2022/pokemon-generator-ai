@@ -138,13 +138,10 @@ list-style:none;
 
 #results img{
 
-position:relative ;
-
-bottom:3rem ;
-
-left:0% ;
-
-transform:none ;
+position: absolute;
+    bottom: 3em;
+    left: 50%;
+    transform: translateX(-50%)
 
 
 }
