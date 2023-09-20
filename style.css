@@ -123,7 +123,7 @@ display:inline-block;
 
 height:auto;
 
-padding-top:128px;
+padding-top:58px;
 
 width:auto ;
 
@@ -138,10 +138,13 @@ list-style:none;
 
 #results img{
 
-position: absolute;
-    bottom: 3em;
-    left: 50%;
-    transform: translateX(-50%)
+position:relative ;
+
+bottom:2rem ;
+
+left:50% ;
+
+transform:none ;
 
 
 }
